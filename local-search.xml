@@ -4,11 +4,24 @@
   
   
   <entry>
+    <title>测试</title>
+    <link href="/2023/06/05/%E6%B5%8B%E8%AF%95/"/>
+    <url>/2023/06/05/%E6%B5%8B%E8%AF%95/</url>
+    
+    <content type="html"><![CDATA[<p>测试</p><span id="more"></span><p>&lt;</p><figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs elixir"><span class="hljs-variable">$ </span>hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br><span class="hljs-variable">$ </span>hexo g   <span class="hljs-comment"># 生成页面</span><br><span class="hljs-variable">$ </span>hexo d   <span class="hljs-comment"># 部署发布</span><br></code></pre></td></tr></table></figure><p><a href="https://hexo.io/zh-cn/docs/github-pages">https://hexo.io/zh-cn/docs/github-pages</a></p><p><a href="http://www.lzqlearn.com/blog/6560820db005/#2-4-5-%E4%BF%AE%E6%94%B9%E5%85%89%E6%A0%87%E6%A0%B7%E5%BC%8F">参考他人博客</a><br><a href="https://zahui.fan/posts/64b52e0d/">typora</a> <a href="https://rufus.ie/zh/#google_vignette">Rufus启动盘创建</a> </p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>BoardBall</title>
     <link href="/2023/05/28/BoardBall/"/>
     <url>/2023/05/28/BoardBall/</url>
     
-    <content type="html"><![CDATA[]]></content>
+    <content type="html"><![CDATA[<h1 id="PIDNN（PID神经网络）"><a href="#PIDNN（PID神经网络）" class="headerlink" title="PIDNN（PID神经网络）"></a>PIDNN（PID神经网络）</h1>]]></content>
     
     
     
@@ -28,25 +41,6 @@
     <tags>
       
       <tag>Matlab</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>测试</title>
-    <link href="/2023/01/31/%E6%B5%8B%E8%AF%95/"/>
-    <url>/2023/01/31/%E6%B5%8B%E8%AF%95/</url>
-    
-    <content type="html"><![CDATA[<p>测试</p><span id="more"></span><p>&lt;</p><figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs elixir"><span class="hljs-variable">$ </span>hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br><span class="hljs-variable">$ </span>hexo g   <span class="hljs-comment"># 生成页面</span><br><span class="hljs-variable">$ </span>hexo d   <span class="hljs-comment"># 部署发布</span><br></code></pre></td></tr></table></figure><p><a href="https://hexo.io/zh-cn/docs/github-pages">https://hexo.io/zh-cn/docs/github-pages</a></p><p><a href="http://www.lzqlearn.com/blog/6560820db005/#2-4-5-%E4%BF%AE%E6%94%B9%E5%85%89%E6%A0%87%E6%A0%B7%E5%BC%8F">参考他人博客</a><br><a href="https://www.robotsfan.com/">博客2</a></p>]]></content>
-    
-    
-    
-    <tags>
-      
-      <tag>hexo</tag>
       
     </tags>
     

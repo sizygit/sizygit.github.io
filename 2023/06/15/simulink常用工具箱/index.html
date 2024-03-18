@@ -7,8 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
-  <link rel="icon" href="/img/fluid.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../../../../img/fluid.png">
+  <link rel="icon" href="../../../../img/fluid.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
@@ -16,22 +16,23 @@
   <meta name="author" content="szy">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Simulink常用工具箱fuzzyControl工具箱模糊推理系统GUI编辑器GUI界面在matlab命令行输入fuzzy即可进入FIS的GUI。 界面分为菜单条，模块区，模糊逻辑区与当前变量区。  T-S与Mamdani型的模糊逻辑区与输出量框区存在差异  熟悉编辑FIS输入，输出量的名称与维数。 Mamdani型的模糊逻辑区：  Sugeno型模糊逻辑区  隶属函数编辑器任意单击输入与输出量">
+    <meta name="description" content="Simulink常用工具箱常规工具箱fuzzyControl工具箱模糊推理系统GUI编辑器GUI界面在matlab命令行输入fuzzy即可进入FIS的GUI。 界面分为菜单条，模块区，模糊逻辑区与当前变量区。  T-S与Mamdani型的模糊逻辑区与输出量框区存在差异  熟悉编辑FIS输入，输出量的名称与维数。 Mamdani型的模糊逻辑区：  Sugeno型模糊逻辑区  隶属函数编辑器任意单击输">
 <meta property="og:type" content="article">
 <meta property="og:title" content="simulink常用工具箱">
 <meta property="og:url" content="http://example.com/2023/06/15/simulink%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%AE%B1/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Simulink常用工具箱fuzzyControl工具箱模糊推理系统GUI编辑器GUI界面在matlab命令行输入fuzzy即可进入FIS的GUI。 界面分为菜单条，模块区，模糊逻辑区与当前变量区。  T-S与Mamdani型的模糊逻辑区与输出量框区存在差异  熟悉编辑FIS输入，输出量的名称与维数。 Mamdani型的模糊逻辑区：  Sugeno型模糊逻辑区  隶属函数编辑器任意单击输入与输出量">
+<meta property="og:description" content="Simulink常用工具箱常规工具箱fuzzyControl工具箱模糊推理系统GUI编辑器GUI界面在matlab命令行输入fuzzy即可进入FIS的GUI。 界面分为菜单条，模块区，模糊逻辑区与当前变量区。  T-S与Mamdani型的模糊逻辑区与输出量框区存在差异  熟悉编辑FIS输入，输出量的名称与维数。 Mamdani型的模糊逻辑区：  Sugeno型模糊逻辑区  隶属函数编辑器任意单击输">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/simulink%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%AE%B1.assets/Mamdani%E6%A8%A1%E7%B3%8A%E9%80%BB%E8%BE%91%E7%AE%97%E6%B3%95.PNG">
-<meta property="og:image" content="http://example.com/simulink%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%AE%B1.assets/T-S%E6%A8%A1%E7%B3%8A%E9%80%BB%E8%BE%91%E7%AE%97%E6%B3%95.PNG">
-<meta property="og:image" content="http://example.com/simulink%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%AE%B1.assets/T-S%E5%9E%8BMF%E8%BE%93%E5%87%BA%E7%95%8C%E9%9D%A2.PNG">
-<meta property="og:image" content="http://example.com/simulink%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%AE%B1.assets/MATLAB%E6%A8%A1%E7%B3%8A%E7%B3%BB%E7%BB%9F%E4%BB%BF%E7%9C%9F%E7%A4%BA%E4%BE%8B.PNG">
+<meta property="og:image" content="http://example.com/2023/06/15/simulink%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%AE%B1/simulink%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%AE%B1/Mamdani%E6%A8%A1%E7%B3%8A%E9%80%BB%E8%BE%91%E7%AE%97%E6%B3%95.PNG">
+<meta property="og:image" content="http://example.com/2023/06/15/simulink%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%AE%B1/simulink%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%AE%B1/T-S%E6%A8%A1%E7%B3%8A%E9%80%BB%E8%BE%91%E7%AE%97%E6%B3%95.PNG">
+<meta property="og:image" content="http://example.com/2023/06/15/simulink%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%AE%B1/simulink%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%AE%B1/T-S%E5%9E%8BMF%E8%BE%93%E5%87%BA%E7%95%8C%E9%9D%A2.PNG">
+<meta property="og:image" content="http://example.com/2023/06/15/simulink%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%AE%B1/simulink%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%AE%B1/MATLAB%E6%A8%A1%E7%B3%8A%E7%B3%BB%E7%BB%9F%E4%BB%BF%E7%9C%9F%E7%A4%BA%E4%BE%8B.PNG">
+<meta property="og:image" content="http://example.com/2023/06/15/simulink%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%AE%B1/simulink%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%AE%B1/image-20230619190121382.png">
 <meta property="article:published_time" content="2023-06-15T02:42:45.000Z">
-<meta property="article:modified_time" content="2023-06-15T03:54:11.605Z">
+<meta property="article:modified_time" content="2024-03-14T02:28:24.998Z">
 <meta property="article:author" content="szy">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/simulink%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%AE%B1.assets/Mamdani%E6%A8%A1%E7%B3%8A%E9%80%BB%E8%BE%91%E7%AE%97%E6%B3%95.PNG">
+<meta name="twitter:image" content="http://example.com/2023/06/15/simulink%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%AE%B1/simulink%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%AE%B1/Mamdani%E6%A8%A1%E7%B3%8A%E9%80%BB%E8%BE%91%E7%AE%97%E6%B3%95.PNG">
   
   
   
@@ -59,12 +60,12 @@
 <link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
 
 
-<link  rel="stylesheet" href="/css/main.css" />
+<link  rel="stylesheet" href="../../../../css/main.css" />
 
 
-  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  <link id="highlight-css" rel="stylesheet" href="../../../../css/highlight.css" />
   
-    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+    <link id="highlight-css-dark" rel="stylesheet" href="../../../../css/highlight-dark.css" />
   
 
 
@@ -80,8 +81,8 @@
       Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
     }
   </script>
-  <script  src="/js/utils.js" ></script>
-  <script  src="/js/color-schema.js" ></script>
+  <script  src="../../../../js/utils.js" ></script>
+  <script  src="../../../../js/color-schema.js" ></script>
   
 
 
@@ -98,7 +99,7 @@
 <div class="header-inner" style="height: 70vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
-    <a class="navbar-brand" href="/">
+    <a class="navbar-brand" href="../../../../index.html">
       <strong>Fluid</strong>
     </a>
 
@@ -117,7 +118,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/">
+              <a class="nav-link" href="../../../../index.html">
                 <i class="iconfont icon-home-fill"></i>
                 <span>首页</span>
               </a>
@@ -129,7 +130,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/archives/">
+              <a class="nav-link" href="../../../../archives/">
                 <i class="iconfont icon-archive-fill"></i>
                 <span>归档</span>
               </a>
@@ -141,7 +142,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/categories/">
+              <a class="nav-link" href="../../../../categories/">
                 <i class="iconfont icon-category-fill"></i>
                 <span>分类</span>
               </a>
@@ -153,7 +154,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/tags/">
+              <a class="nav-link" href="../../../../tags/">
                 <i class="iconfont icon-tags-fill"></i>
                 <span>标签</span>
               </a>
@@ -165,7 +166,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/about/">
+              <a class="nav-link" href="../../../../about/">
                 <i class="iconfont icon-user-fill"></i>
                 <span>关于</span>
               </a>
@@ -195,7 +196,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+     style="background: url('../../../../img/default.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -224,7 +225,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.5k 字
+          2.6k 字
         
       </span>
     
@@ -235,7 +236,7 @@
         
         
         
-          13 分钟
+          22 分钟
         
       </span>
     
@@ -278,16 +279,16 @@
             
               <div class="markdown-body">
                 
-                <h1 id="Simulink常用工具箱"><a href="#Simulink常用工具箱" class="headerlink" title="Simulink常用工具箱"></a>Simulink常用工具箱</h1><h2 id="fuzzyControl工具箱"><a href="#fuzzyControl工具箱" class="headerlink" title="fuzzyControl工具箱"></a>fuzzyControl工具箱</h2><h3 id="模糊推理系统GUI编辑器"><a href="#模糊推理系统GUI编辑器" class="headerlink" title="模糊推理系统GUI编辑器"></a>模糊推理系统GUI编辑器</h3><h4 id="GUI界面"><a href="#GUI界面" class="headerlink" title="GUI界面"></a>GUI界面</h4><p>在matlab命令行输入<code>fuzzy</code>即可进入FIS的GUI。</p>
+                <h1 id="Simulink常用工具箱"><a href="#Simulink常用工具箱" class="headerlink" title="Simulink常用工具箱"></a>Simulink常用工具箱</h1><h2 id="常规工具箱"><a href="#常规工具箱" class="headerlink" title="常规工具箱"></a>常规工具箱</h2><h2 id="fuzzyControl工具箱"><a href="#fuzzyControl工具箱" class="headerlink" title="fuzzyControl工具箱"></a>fuzzyControl工具箱</h2><h3 id="模糊推理系统GUI编辑器"><a href="#模糊推理系统GUI编辑器" class="headerlink" title="模糊推理系统GUI编辑器"></a>模糊推理系统GUI编辑器</h3><h4 id="GUI界面"><a href="#GUI界面" class="headerlink" title="GUI界面"></a>GUI界面</h4><p>在matlab命令行输入<code>fuzzy</code>即可进入FIS的GUI。</p>
 <p>界面分为菜单条，模块区，模糊逻辑区与当前变量区。</p>
 <blockquote>
 <p>T-S与Mamdani型的模糊逻辑区与输出量框区存在差异</p>
 </blockquote>
 <p>熟悉编辑FIS输入，输出量的名称与维数。</p>
 <p>Mamdani型的模糊逻辑区：</p>
-<p><img src="/simulink%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%AE%B1.assets/Mamdani%E6%A8%A1%E7%B3%8A%E9%80%BB%E8%BE%91%E7%AE%97%E6%B3%95.PNG" srcset="/img/loading.gif" lazyload></p>
+<p><img src="simulink%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%AE%B1/Mamdani%E6%A8%A1%E7%B3%8A%E9%80%BB%E8%BE%91%E7%AE%97%E6%B3%95.PNG" srcset="/img/loading.gif" lazyload></p>
 <p>Sugeno型模糊逻辑区</p>
-<p><img src="/simulink%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%AE%B1.assets/T-S%E6%A8%A1%E7%B3%8A%E9%80%BB%E8%BE%91%E7%AE%97%E6%B3%95.PNG" srcset="/img/loading.gif" lazyload></p>
+<p><img src="simulink%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%AE%B1/T-S%E6%A8%A1%E7%B3%8A%E9%80%BB%E8%BE%91%E7%AE%97%E6%B3%95.PNG" srcset="/img/loading.gif" lazyload></p>
 <h4 id="隶属函数编辑器"><a href="#隶属函数编辑器" class="headerlink" title="隶属函数编辑器"></a>隶属函数编辑器</h4><p>任意单击输入与输出量模框即可进入MF编辑器。</p>
 <h5 id="Mamdani型MF的编辑"><a href="#Mamdani型MF的编辑" class="headerlink" title="Mamdani型MF的编辑"></a>Mamdani型MF的编辑</h5><ol>
 <li><p>编辑输入&#x2F;出变量的论域(Range)与显示范围(Dispaly Range)。</p>
@@ -300,7 +301,7 @@
 </li>
 </ol>
 <h5 id="Sugeno型MF的编辑"><a href="#Sugeno型MF的编辑" class="headerlink" title="Sugeno型MF的编辑"></a>Sugeno型MF的编辑</h5><p>两种类型推理的输出结论不大相同，前者输出模糊子集，而后者模糊推理输出的是线性函数。</p>
-<p><img src="/simulink%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%AE%B1.assets/T-S%E5%9E%8BMF%E8%BE%93%E5%87%BA%E7%95%8C%E9%9D%A2.PNG" srcset="/img/loading.gif" lazyload></p>
+<p><img src="simulink%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%AE%B1/T-S%E5%9E%8BMF%E8%BE%93%E5%87%BA%E7%95%8C%E9%9D%A2.PNG" srcset="/img/loading.gif" lazyload></p>
 <h4 id="模糊规则编辑器"><a href="#模糊规则编辑器" class="headerlink" title="模糊规则编辑器"></a>模糊规则编辑器</h4><p>输入量与输出量间的模糊蕴含关系R，用F条件命题对他们进行表述。</p>
 <ol>
 <li><p>Edit与Options的子菜单列表</p>
@@ -353,10 +354,62 @@
 </ol>
 <p>熟悉常用模块</p>
 <h4 id="通过仿真对系统进行分析"><a href="#通过仿真对系统进行分析" class="headerlink" title="通过仿真对系统进行分析"></a>通过仿真对系统进行分析</h4><p>有许许多多的模糊模型仿真示例</p>
-<p><img src="/simulink%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%AE%B1.assets/MATLAB%E6%A8%A1%E7%B3%8A%E7%B3%BB%E7%BB%9F%E4%BB%BF%E7%9C%9F%E7%A4%BA%E4%BE%8B.PNG" srcset="/img/loading.gif" lazyload></p>
+<p><img src="simulink%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%AE%B1/MATLAB%E6%A8%A1%E7%B3%8A%E7%B3%BB%E7%BB%9F%E4%BB%BF%E7%9C%9F%E7%A4%BA%E4%BE%8B.PNG" srcset="/img/loading.gif" lazyload></p>
 <h2 id="StateFlow工具箱"><a href="#StateFlow工具箱" class="headerlink" title="StateFlow工具箱"></a>StateFlow工具箱</h2><h2 id="Model-Linearizer"><a href="#Model-Linearizer" class="headerlink" title="Model Linearizer"></a><strong>Model Linearizer</strong></h2><p>​		使用 Model Linearizer，您可以分析线性化模型的时域和频域响应。您可以比较多个模型的响应并查看稳定裕度和稳定时间等系统特性。</p>
-<p>参考官网链接:<a target="_blank" rel="noopener" href="https://ww2-mathworks-cn.translate.goog/help/slcontrol/ug/linearize-simulink-model.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN">在模型工作点线性化Simulink 模型</a>,   <a target="_blank" rel="noopener" href="https://ww2-mathworks-cn.translate.goog/help/slcontrol/ug/analyze-results-using-linear-analysis-tool-response-plots-1.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN">使用模型线性化器响应图分析结果使用模型线性化器响应图分析结果</a></p>
-<p>对选择的信号插入Input Point &#x2F; Output Point</p>
+<p>参考官网链接:<a target="_blank" rel="noopener" href="https://ww2-mathworks-cn.translate.goog/help/slcontrol/ug/linearize-simulink-model.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN">在模型工作点线性化Simulink 模型</a>,   <a target="_blank" rel="noopener" href="https://ww2-mathworks-cn.translate.goog/help/slcontrol/ug/analyze-results-using-linear-analysis-tool-response-plots-1.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN">使用模型线性化器响应图分析结果使用模型线性化器响应图分析结果</a>  <a target="_blank" rel="noopener" href="https://www-mathworks-com.translate.goog/help/slcontrol/ug/specify-portion-of-model-to-linearize-in-linear-analysis-tool.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN">在模型线性化器中指定要线性化的模型部分</a></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Simulink Control Design Linearization</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>图形用户界面</td>
+<td>是的。请参阅<a target="_blank" rel="noopener" href="https://www-mathworks-com.translate.goog/help/slcontrol/ug/linearize-simulink-model.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN">在模型工作点线性化 Simulink 模型</a>。</td>
+</tr>
+<tr>
+<td>灵活定义模型的哪一部分进行线性化</td>
+<td>是的。允许您以图形方式或编程方式在 Simulink 模型的任何级别指定线性化 I&#x2F;O 点，而无需修改您的模型。请参阅<a target="_blank" rel="noopener" href="https://www-mathworks-com.translate.goog/help/slcontrol/ug/linearize-at-trimmed-operating-point.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN">在修整的工作点进行线性化</a>。</td>
+</tr>
+<tr>
+<td>开环分析</td>
+<td>是的。允许您在不删除模型中的反馈信号的情况下打开反馈回路。请参阅<a target="_blank" rel="noopener" href="https://www-mathworks-com.translate.goog/help/slcontrol/ug/open-loop-response-of-control-system-for-stability-margin-analysis.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN">计算开环响应</a>。</td>
+</tr>
+<tr>
+<td>控制线性模型状态排序</td>
+<td>是的。请参阅<a target="_blank" rel="noopener" href="https://www-mathworks-com.translate.goog/help/slcontrol/ug/state-order-in-linearized-model.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN">线性化模型中的顺序状态</a>。</td>
+</tr>
+<tr>
+<td>控制单个块的线性化</td>
+<td>是的。允许您为模块和子系统指定自定义线性化行为。请参阅<a target="_blank" rel="noopener" href="https://www-mathworks-com.translate.goog/help/slcontrol/ug/when-to-specify-individual-block-linearization.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN">何时指定单个块线性化</a>。</td>
+</tr>
+<tr>
+<td>线性化诊断</td>
+<td>是的。识别有问题的块并让您检查每个块的线性化值。请参阅<a target="_blank" rel="noopener" href="https://www-mathworks-com.translate.goog/help/slcontrol/ug/linearization-troubleshooting-overview.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN">线性化故障排除概述</a>。</td>
+</tr>
+<tr>
+<td>块检测和减少</td>
+<td>是的。块缩减检测对整体线性化没有贡献的块，从而产生最小实现。</td>
+</tr>
+<tr>
+<td>多速率模型速率转换算法的控制</td>
+<td>是的</td>
+</tr>
+</tbody></table>
+<p>分析点类型：</p>
+<ul>
+<li><strong>Input Perturbation</strong> — Specifies an additive input to a signal.</li>
+<li><strong>Output Measurement</strong> — Takes a measurement at a signal.</li>
+<li><strong>Loop Break</strong> — Specifies a loop opening.</li>
+<li><strong>Open-Loop Input</strong> — Specifies a loop break followed by an input perturbation.</li>
+<li><strong>Open-Loop Output</strong> — Specifies an output measurement followed by a loop break.</li>
+<li><strong>Loop Transfer</strong> — Specifies an output measurement before a loop break followed by an input perturbation.</li>
+<li><strong>Sensitivity</strong> — Specifies an input perturbation followed by an output measurement.</li>
+<li><strong>Complementary Sensitivity</strong> — Specifies an output measurement followed by an input perturbation</li>
+</ul>
+<p>​		若想要指定开环分析（屏蔽掉外环反馈），可利用Open-Loop Input&#x2F;Output，可以选择以下组合：1.  <strong>Open-Loop Input+Output Measurement</strong>  2. <strong>Input Perturbation+Output Measurement</strong></p>
+<p>​		对选择的信号插入Input Point &#x2F; Output Point</p>
 <ul>
 <li><p>要指定要线性化的模型部分，首先打开线性化选项卡。为此，在Simulink 窗口的Apps 库中，点击Linearization Manager 。</p>
 </li>
@@ -365,7 +418,10 @@
 <li><p>将分析的信号配置为Input Perturbation。将输出信号配置为Open-loop Output。开环输出点是在开环后进行的输出测量，它在不改变模型工作点的情况下消除了反馈信号对线性化的影响。要指定要线性化的模型部分，首先打开线性化选项卡。为此，在 Simulink 窗口的 Apps 库中，点击 Linearization Manager 。</p>
 </li>
 </ul>
-<p>Model Linearize进入绘制波特图</p>
+<p>​     Model Linearize进入绘制波特图</p>
+<p>实例：</p>
+<p><img src="simulink%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%AE%B1/image-20230619190121382.png" srcset="/img/loading.gif" lazyload alt="image-20230619190121382"></p>
+<h2 id="S-function使用"><a href="#S-function使用" class="headerlink" title="S-function使用"></a>S-function使用</h2><p>参考链接<a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/matlab_external/c-mex-functions.html">C++ MEX 函数</a>，<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/511253062">知乎S-function使用</a>，<a target="_blank" rel="noopener" href="https://blog.smileland.me/2020/02/12/%E4%BD%BF%E7%94%A8C%E8%AF%AD%E8%A8%80%E5%86%99%E7%AE%80%E5%8D%95S-Function/">2020-02-12-使用C语言写简单S-Functio</a></p>
 
                 
               </div>
@@ -428,11 +484,17 @@
                   <article class="post-prev col-6">
                     
                     
+                      <a href="../../../../2024/03/18/test/" title="test">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">test</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/06/07/ssh-deploy/" title="ssh deploy">
+                      <a href="../../07/ssh-deploy/" title="ssh deploy">
                         <span class="hidden-mobile">ssh deploy</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
@@ -562,8 +624,8 @@
 
 <script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
 <script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
-<script  src="/js/events.js" ></script>
-<script  src="/js/plugins.js" ></script>
+<script  src="../../../../js/events.js" ></script>
+<script  src="../../../../js/plugins.js" ></script>
 
 
   <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
@@ -585,7 +647,7 @@
 
 
   
-    <script  src="/js/img-lazyload.js" ></script>
+    <script  src="../../../../js/img-lazyload.js" ></script>
   
 
 
@@ -684,7 +746,7 @@
 
   <script>Fluid.plugins.imageCaption();</script>
 
-  <script  src="/js/local-search.js" ></script>
+  <script  src="../../../../js/local-search.js" ></script>
 
 
 
@@ -692,7 +754,7 @@
 
 <!-- 主题的启动项，将它保持在最底部 -->
 <!-- the boot of the theme, keep it at the bottom -->
-<script  src="/js/boot.js" ></script>
+<script  src="../../../../js/boot.js" ></script>
 
 
   

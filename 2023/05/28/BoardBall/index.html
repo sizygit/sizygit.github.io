@@ -7,8 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
-  <link rel="icon" href="/img/fluid.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../../../../img/fluid.png">
+  <link rel="icon" href="../../../../img/fluid.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
@@ -16,15 +16,15 @@
   <meta name="author" content="szy">
   <meta name="keywords" content="">
   
-    <meta name="description" content="基于BP神经网络的PID控制器传统PID控制PIDNN（PID神经网络）">
+    <meta name="description" content="板球系统基本原理根据拉格朗日广义方程，结合小角度线性化可得到： $$\begin{aligned}&amp;\dot{\mathbf{x}}_x&#x3D;A_x\mathbf{x}_x+b_xu_x\ &amp;y_x&#x3D;[1, 0 ,0 ,0] \mathbf{x}_x\ &amp;A_\mathrm{x}&#x3D;\begin{bmatrix}0&amp;1&amp;0&amp;0">
 <meta property="og:type" content="article">
 <meta property="og:title" content="BoardBall">
 <meta property="og:url" content="http://example.com/2023/05/28/BoardBall/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="基于BP神经网络的PID控制器传统PID控制PIDNN（PID神经网络）">
+<meta property="og:description" content="板球系统基本原理根据拉格朗日广义方程，结合小角度线性化可得到： $$\begin{aligned}&amp;\dot{\mathbf{x}}_x&#x3D;A_x\mathbf{x}_x+b_xu_x\ &amp;y_x&#x3D;[1, 0 ,0 ,0] \mathbf{x}_x\ &amp;A_\mathrm{x}&#x3D;\begin{bmatrix}0&amp;1&amp;0&amp;0">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-05-28T12:36:54.000Z">
-<meta property="article:modified_time" content="2023-06-14T14:58:19.108Z">
+<meta property="article:modified_time" content="2023-07-21T02:34:33.660Z">
 <meta property="article:author" content="szy">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -54,12 +54,12 @@
 <link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
 
 
-<link  rel="stylesheet" href="/css/main.css" />
+<link  rel="stylesheet" href="../../../../css/main.css" />
 
 
-  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  <link id="highlight-css" rel="stylesheet" href="../../../../css/highlight.css" />
   
-    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+    <link id="highlight-css-dark" rel="stylesheet" href="../../../../css/highlight-dark.css" />
   
 
 
@@ -75,8 +75,8 @@
       Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
     }
   </script>
-  <script  src="/js/utils.js" ></script>
-  <script  src="/js/color-schema.js" ></script>
+  <script  src="../../../../js/utils.js" ></script>
+  <script  src="../../../../js/color-schema.js" ></script>
   
 
 
@@ -93,7 +93,7 @@
 <div class="header-inner" style="height: 70vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
-    <a class="navbar-brand" href="/">
+    <a class="navbar-brand" href="../../../../index.html">
       <strong>Fluid</strong>
     </a>
 
@@ -112,7 +112,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/">
+              <a class="nav-link" href="../../../../index.html">
                 <i class="iconfont icon-home-fill"></i>
                 <span>首页</span>
               </a>
@@ -124,7 +124,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/archives/">
+              <a class="nav-link" href="../../../../archives/">
                 <i class="iconfont icon-archive-fill"></i>
                 <span>归档</span>
               </a>
@@ -136,7 +136,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/categories/">
+              <a class="nav-link" href="../../../../categories/">
                 <i class="iconfont icon-category-fill"></i>
                 <span>分类</span>
               </a>
@@ -148,7 +148,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/tags/">
+              <a class="nav-link" href="../../../../tags/">
                 <i class="iconfont icon-tags-fill"></i>
                 <span>标签</span>
               </a>
@@ -160,7 +160,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/about/">
+              <a class="nav-link" href="../../../../about/">
                 <i class="iconfont icon-user-fill"></i>
                 <span>关于</span>
               </a>
@@ -190,7 +190,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+     style="background: url('../../../../img/default.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -219,7 +219,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          36 字
+          423 字
         
       </span>
     
@@ -230,7 +230,7 @@
         
         
         
-          1 分钟
+          4 分钟
         
       </span>
     
@@ -273,7 +273,10 @@
             
               <div class="markdown-body">
                 
-                <h1 id="基于BP神经网络的PID控制器"><a href="#基于BP神经网络的PID控制器" class="headerlink" title="基于BP神经网络的PID控制器"></a>基于BP神经网络的PID控制器</h1><h2 id="传统PID控制"><a href="#传统PID控制" class="headerlink" title="传统PID控制"></a>传统PID控制</h2><h1 id="PIDNN（PID神经网络）"><a href="#PIDNN（PID神经网络）" class="headerlink" title="PIDNN（PID神经网络）"></a>PIDNN（PID神经网络）</h1>
+                <h1 id="板球系统基本原理"><a href="#板球系统基本原理" class="headerlink" title="板球系统基本原理"></a>板球系统基本原理</h1><p>根据拉格朗日广义方程，结合小角度线性化可得到：</p>
+<p>$$\begin{aligned}&amp;\dot{\mathbf{x}}_x&#x3D;A_x\mathbf{x}_x+b_xu_x\ &amp;y_x&#x3D;[1, 0 ,0 ,0] \mathbf{x}_x\ &amp;A_\mathrm{x}&#x3D;\begin{bmatrix}0&amp;1&amp;0&amp;0\0&amp;0&amp;-7.007&amp;0\0&amp;0&amp;0&amp;1\0&amp;0&amp;0&amp;0\end{bmatrix},b_\mathrm{x}&#x3D;\begin{bmatrix}0\0\0\1\end{bmatrix}\end{aligned}$$</p>
+<p>式中，$\dot{X}_x&#x3D; [x,v,\alpha,\dot{\alpha}]^T$</p>
+<h1 id="基于BP神经网络的PID控制器"><a href="#基于BP神经网络的PID控制器" class="headerlink" title="基于BP神经网络的PID控制器"></a>基于BP神经网络的PID控制器</h1><h2 id="传统PID控制"><a href="#传统PID控制" class="headerlink" title="传统PID控制"></a>传统PID控制</h2><h1 id="PIDNN（PID神经网络）"><a href="#PIDNN（PID神经网络）" class="headerlink" title="PIDNN（PID神经网络）"></a>PIDNN（PID神经网络）</h1>
                 
               </div>
             
@@ -335,7 +338,7 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/06/05/%E6%B5%8B%E8%AF%95/" title="测试">
+                      <a href="../../../06/05/%E6%B5%8B%E8%AF%95/" title="测试">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile">测试</span>
                         <span class="visible-mobile">上一篇</span>
@@ -345,7 +348,7 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/02/07/matlab%E7%AC%94%E8%AE%B0/" title="matlab笔记">
+                      <a href="../../../02/07/matlab%E7%AC%94%E8%AE%B0/" title="matlab笔记">
                         <span class="hidden-mobile">matlab笔记</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
@@ -475,8 +478,8 @@
 
 <script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
 <script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
-<script  src="/js/events.js" ></script>
-<script  src="/js/plugins.js" ></script>
+<script  src="../../../../js/events.js" ></script>
+<script  src="../../../../js/plugins.js" ></script>
 
 
   <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
@@ -498,7 +501,7 @@
 
 
   
-    <script  src="/js/img-lazyload.js" ></script>
+    <script  src="../../../../js/img-lazyload.js" ></script>
   
 
 
@@ -597,7 +600,7 @@
 
   <script>Fluid.plugins.imageCaption();</script>
 
-  <script  src="/js/local-search.js" ></script>
+  <script  src="../../../../js/local-search.js" ></script>
 
 
 
@@ -605,7 +608,7 @@
 
 <!-- 主题的启动项，将它保持在最底部 -->
 <!-- the boot of the theme, keep it at the bottom -->
-<script  src="/js/boot.js" ></script>
+<script  src="../../../../js/boot.js" ></script>
 
 
   

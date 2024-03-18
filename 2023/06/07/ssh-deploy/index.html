@@ -7,8 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
-  <link rel="icon" href="/img/fluid.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../../../../img/fluid.png">
+  <link rel="icon" href="../../../../img/fluid.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
@@ -24,7 +24,7 @@
 <meta property="og:description" content="配置github的ssh密钥可见官方链接，及相关ssh配置代理转发 输入 ls -al ~&#x2F;.ssh 以查看是否存在现有的 SSH 密钥。 12$ ls -al ~&#x2F;.ssh# Lists the files in your .ssh directory, if they exist  检查目录列表以查看是否已经有 SSH 公钥。 默认情况下，GitHub 的一个支持的公钥的文件名是以下之一。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-06-07T02:29:15.000Z">
-<meta property="article:modified_time" content="2023-06-07T04:10:03.473Z">
+<meta property="article:modified_time" content="2023-12-23T09:23:36.924Z">
 <meta property="article:author" content="szy">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -54,12 +54,12 @@
 <link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
 
 
-<link  rel="stylesheet" href="/css/main.css" />
+<link  rel="stylesheet" href="../../../../css/main.css" />
 
 
-  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  <link id="highlight-css" rel="stylesheet" href="../../../../css/highlight.css" />
   
-    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+    <link id="highlight-css-dark" rel="stylesheet" href="../../../../css/highlight-dark.css" />
   
 
 
@@ -75,8 +75,8 @@
       Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
     }
   </script>
-  <script  src="/js/utils.js" ></script>
-  <script  src="/js/color-schema.js" ></script>
+  <script  src="../../../../js/utils.js" ></script>
+  <script  src="../../../../js/color-schema.js" ></script>
   
 
 
@@ -93,7 +93,7 @@
 <div class="header-inner" style="height: 70vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
-    <a class="navbar-brand" href="/">
+    <a class="navbar-brand" href="../../../../index.html">
       <strong>Fluid</strong>
     </a>
 
@@ -112,7 +112,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/">
+              <a class="nav-link" href="../../../../index.html">
                 <i class="iconfont icon-home-fill"></i>
                 <span>首页</span>
               </a>
@@ -124,7 +124,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/archives/">
+              <a class="nav-link" href="../../../../archives/">
                 <i class="iconfont icon-archive-fill"></i>
                 <span>归档</span>
               </a>
@@ -136,7 +136,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/categories/">
+              <a class="nav-link" href="../../../../categories/">
                 <i class="iconfont icon-category-fill"></i>
                 <span>分类</span>
               </a>
@@ -148,7 +148,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/tags/">
+              <a class="nav-link" href="../../../../tags/">
                 <i class="iconfont icon-tags-fill"></i>
                 <span>标签</span>
               </a>
@@ -160,7 +160,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/about/">
+              <a class="nav-link" href="../../../../about/">
                 <i class="iconfont icon-user-fill"></i>
                 <span>关于</span>
               </a>
@@ -190,7 +190,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+     style="background: url('../../../../img/default.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -219,7 +219,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.3k 字
+          1.7k 字
         
       </span>
     
@@ -230,7 +230,7 @@
         
         
         
-          11 分钟
+          14 分钟
         
       </span>
     
@@ -324,6 +324,8 @@
 <li>对于windows下，每次打开git bash都可能需要<code>eval &quot;$(ssh-agent -s)&quot;</code>与<code>ssh-add ~/.ssh/id_ed25519</code>来重新打开agent并加入本地密钥，可利用<code>ssh-add -l</code>检查此时是否打开agent及密钥。</li>
 <li>尽量使用一个git bash进行操作。</li>
 </ul>
+<p>版本: 1.85.1 (user setup)<br>提交: 0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2<br>日期: 2023-12-13T09:49:37.021Z<br>Electron: 25.9.7<br>ElectronBuildId: 25551756<br>Chromium: 114.0.5735.289<br>Node.js: 18.15.0<br>V8: 11.4.183.29-electron.0<br>OS: Windows_NT x64 10.0.19045</p>
+<figure class="highlight axapta"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs axapta">scp vscode-<span class="hljs-keyword">server</span>-linux-x64.tar.gz cute@<span class="hljs-number">192.168</span><span class="hljs-number">.43</span><span class="hljs-number">.253</span>:~/.vscode-<span class="hljs-keyword">server</span>/bin<br><br>mv vscode-<span class="hljs-keyword">server</span>-linux-x64 <span class="hljs-number">0</span>ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2<br>rm vscode-<span class="hljs-keyword">server</span>-linux-x64.tar.gz<br><br></code></pre></td></tr></table></figure>
 
                 
               </div>
@@ -386,7 +388,7 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/06/15/simulink%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%AE%B1/" title="simulink常用工具箱">
+                      <a href="../../15/simulink%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%AE%B1/" title="simulink常用工具箱">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile">simulink常用工具箱</span>
                         <span class="visible-mobile">上一篇</span>
@@ -396,7 +398,7 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/06/05/%E6%B5%8B%E8%AF%95/" title="测试">
+                      <a href="../../05/%E6%B5%8B%E8%AF%95/" title="测试">
                         <span class="hidden-mobile">测试</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
@@ -526,8 +528,8 @@
 
 <script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
 <script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
-<script  src="/js/events.js" ></script>
-<script  src="/js/plugins.js" ></script>
+<script  src="../../../../js/events.js" ></script>
+<script  src="../../../../js/plugins.js" ></script>
 
 
   <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
@@ -549,7 +551,7 @@
 
 
   
-    <script  src="/js/img-lazyload.js" ></script>
+    <script  src="../../../../js/img-lazyload.js" ></script>
   
 
 
@@ -648,7 +650,7 @@
 
   <script>Fluid.plugins.imageCaption();</script>
 
-  <script  src="/js/local-search.js" ></script>
+  <script  src="../../../../js/local-search.js" ></script>
 
 
 
@@ -656,7 +658,7 @@
 
 <!-- 主题的启动项，将它保持在最底部 -->
 <!-- the boot of the theme, keep it at the bottom -->
-<script  src="/js/boot.js" ></script>
+<script  src="../../../../js/boot.js" ></script>
 
 
   

@@ -16,24 +16,25 @@
   <meta name="author" content="szy">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Simulink常用工具StateFlowModel Linearizer​		使用 Model Linearizer，您可以分析线性化模型的时域和频域响应。您可以比较多个模型的响应并查看稳定裕度和稳定时间等系统特性。 参考官网链接:在模型工作点线性化Simulink 模型,   使用模型线性化器响应图分析结果使用模型线性化器响应图分析结果  在模型线性化器中指定要线性化的模型部分     Sim">
+    <meta name="description" content="Simulink常用工具StateFlow​		Stateflow 图是有限状态机的图形表示，由状态、转移和数据组成。您可以创建 Stateflow 图来定义 MATLAB 算法或 Simulink模型如何响应外部输入信号、事件和基于时间的条件。Stateflow 编辑器是一个图形环境，用于设计状态转移图、流程图、状态转移表和真值表。在打开 Stateflow 编辑器之前，需要先确定最能满足您需求">
 <meta property="og:type" content="article">
 <meta property="og:title" content="simulinkNote">
 <meta property="og:url" content="http://example.com/2024/03/18/simulinkNote/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Simulink常用工具StateFlowModel Linearizer​		使用 Model Linearizer，您可以分析线性化模型的时域和频域响应。您可以比较多个模型的响应并查看稳定裕度和稳定时间等系统特性。 参考官网链接:在模型工作点线性化Simulink 模型,   使用模型线性化器响应图分析结果使用模型线性化器响应图分析结果  在模型线性化器中指定要线性化的模型部分     Sim">
+<meta property="og:description" content="Simulink常用工具StateFlow​		Stateflow 图是有限状态机的图形表示，由状态、转移和数据组成。您可以创建 Stateflow 图来定义 MATLAB 算法或 Simulink模型如何响应外部输入信号、事件和基于时间的条件。Stateflow 编辑器是一个图形环境，用于设计状态转移图、流程图、状态转移表和真值表。在打开 Stateflow 编辑器之前，需要先确定最能满足您需求">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2024/03/18/simulinkNote/stateflow1.png">
 <meta property="og:image" content="http://example.com/2024/03/18/simulinkNote/image-20230619190121382.png">
 <meta property="og:image" content="http://example.com/2024/03/18/simulinkNote/Mamdani%E6%A8%A1%E7%B3%8A%E9%80%BB%E8%BE%91%E7%AE%97%E6%B3%95.PNG">
 <meta property="og:image" content="http://example.com/2024/03/18/simulinkNote/T-S%E6%A8%A1%E7%B3%8A%E9%80%BB%E8%BE%91%E7%AE%97%E6%B3%95.PNG">
 <meta property="og:image" content="http://example.com/2024/03/18/simulinkNote/T-S%E5%9E%8BMF%E8%BE%93%E5%87%BA%E7%95%8C%E9%9D%A2.PNG">
 <meta property="og:image" content="http://example.com/2024/03/18/simulinkNote/MATLAB%E6%A8%A1%E7%B3%8A%E7%B3%BB%E7%BB%9F%E4%BB%BF%E7%9C%9F%E7%A4%BA%E4%BE%8B.PNG">
 <meta property="article:published_time" content="2024-03-18T05:51:52.000Z">
-<meta property="article:modified_time" content="2024-03-22T05:37:47.571Z">
+<meta property="article:modified_time" content="2024-03-25T16:06:45.790Z">
 <meta property="article:author" content="szy">
 <meta property="article:tag" content="simulink">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/2024/03/18/simulinkNote/image-20230619190121382.png">
+<meta name="twitter:image" content="http://example.com/2024/03/18/simulinkNote/stateflow1.png">
   
   
   
@@ -226,7 +227,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          10k 字
+          11k 字
         
       </span>
     
@@ -237,7 +238,7 @@
         
         
         
-          88 分钟
+          93 分钟
         
       </span>
     
@@ -280,7 +281,17 @@
             
               <div class="markdown-body">
                 
-                <h1 id="Simulink常用工具"><a href="#Simulink常用工具" class="headerlink" title="Simulink常用工具"></a>Simulink常用工具</h1><h2 id="StateFlow"><a href="#StateFlow" class="headerlink" title="StateFlow"></a>StateFlow</h2><h2 id="Model-Linearizer"><a href="#Model-Linearizer" class="headerlink" title="Model Linearizer"></a><strong>Model Linearizer</strong></h2><p>​		使用 Model Linearizer，您可以分析线性化模型的时域和频域响应。您可以比较多个模型的响应并查看稳定裕度和稳定时间等系统特性。</p>
+                <h1 id="Simulink常用工具"><a href="#Simulink常用工具" class="headerlink" title="Simulink常用工具"></a>Simulink常用工具</h1><h2 id="StateFlow"><a href="#StateFlow" class="headerlink" title="StateFlow"></a>StateFlow</h2><p>​		Stateflow 图是有限状态机的图形表示，由状态、转移和数据组成。您可以创建 Stateflow 图来定义 MATLAB 算法或 Simulink模型如何响应外部输入信号、事件和基于时间的条件。Stateflow 编辑器是一个图形环境，用于设计状态转移图、流程图、状态转移表和真值表。在打开 Stateflow 编辑器之前，需要先确定最能满足您需求的图执行模式。</p>
+<ul>
+<li><p>要建立周期性或连续时间 Simulink 算法的条件、基于事件和基于时间的逻辑模型，直接在simulink中导入<code>chart</code>模块。</p>
+</li>
+<li><p>要为 MATLAB 应用程序设计可重用的状态机和时序逻辑，请使用 <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/edit.html"><code>edit</code></a> 函数创建可作为 MATLAB 对象执行的独立 Stateflow 图。在 MATLAB 命令提示符处，输入：</p>
+  <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs matlab">edit sfDemo.sfx  <span class="hljs-comment">% create chart for execution as a MATLAB object</span><br></code></pre></td></tr></table></figure></li>
+</ul>
+<p>​		Stateflow编辑器主要包括图画布、对象选项板和符号图窗；图画布是表示Stateflow的绘图区域，左侧的对象选项板是可添加图形元素的工具，右侧的符号图窗则是用来添加或编辑数据、时间和消息的工具，如下图：</p>
+<p><img src="/2024/03/18/simulinkNote/stateflow1.png" srcset="/img/loading.gif" lazyload></p>
+<p>​		最简单的state模块可用左键拖出，可定义状态名称与状态动作；同时可以在不同的状态间绘制状态转移线，在线上可添加不同的事件名称、转移条件及动作。通常运行需定义图中所有符号的作用域（如输入数据、输出数据或常量数据），通过点击左侧对应的type图表进行修改。</p>
+<h2 id="Model-Linearizer"><a href="#Model-Linearizer" class="headerlink" title="Model Linearizer"></a><strong>Model Linearizer</strong></h2><p>​		使用 Model Linearizer，您可以分析线性化模型的时域和频域响应。您可以比较多个模型的响应并查看稳定裕度和稳定时间等系统特性。</p>
 <p>参考官网链接:<a target="_blank" rel="noopener" href="https://ww2-mathworks-cn.translate.goog/help/slcontrol/ug/linearize-simulink-model.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN">在模型工作点线性化Simulink 模型</a>,   <a target="_blank" rel="noopener" href="https://ww2-mathworks-cn.translate.goog/help/slcontrol/ug/analyze-results-using-linear-analysis-tool-response-plots-1.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN">使用模型线性化器响应图分析结果使用模型线性化器响应图分析结果</a>  <a target="_blank" rel="noopener" href="https://www-mathworks-com.translate.goog/help/slcontrol/ug/specify-portion-of-model-to-linearize-in-linear-analysis-tool.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN">在模型线性化器中指定要线性化的模型部分</a></p>
 <table>
 <thead>
@@ -438,7 +449,6 @@
 </tr>
 </tbody></table>
 <p>​		A Level-2 MATLAB S-function必须包括<code>setup</code>与<code>Outputs</code>两个方法，其余方法及对应的C MEX函数可参考<a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/simulink/sfg/writing-level-2-matlab-s-functions.html">writing-level-2-matlab-s-functions</a>，官方提供了一个MATLAB S-function模板文件<a href="edit('msfuntmpl_basic.m')">msfuntmpl_basic.m</a>，用来编写自己的程序(也可以使用sfundemos命令来查看内置的所有模板)。<a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/simulink/sfg/dwork-matlab.html#brd2qpw">DWork</a>向量是 S-Function 要求 Simulink 引擎分配给模型中 S-Function 的每个实例的内存块，通常离散变量需使用它，其需在<code>PostPropagationSetup</code>方法中初始化向量维度与属性，在<code>Start</code> 或 <code>InitializeConditions</code> 方法中设定初值，且可在其余方法中调用。<a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/simulink/sfg/s-function-concepts.html">S-Function Concepts</a>中介绍了直接馈通对代数环的影响，及采样时间偏移与可变数组的概念。</p>
-<p>​		</p>
 <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><code class="hljs matlab"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">msfcn_unit_delay</span><span class="hljs-params">(block)</span></span><br><span class="hljs-comment">% Level-2 MATLAB file S-Function for unit delay demo.</span><br>  setup(block);<br><span class="hljs-comment">%endfunction</span><br><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">setup</span><span class="hljs-params">(block)</span></span><br>  block.NumDialogPrms  = <span class="hljs-number">1</span>; <span class="hljs-comment">%对话框参数个数</span><br>  block.NumInputPorts  = <span class="hljs-number">1</span>;<br>  block.NumOutputPorts = <span class="hljs-number">1</span>; <span class="hljs-comment">%定义输入输出端口</span><br><br>  block.SetPreCompInpPortInfoToDynamic;<br>  block.SetPreCompOutPortInfoToDynamic;<span class="hljs-comment">%输入端口和输出端口从模型继承编译属性</span><br>  block.InputPort(<span class="hljs-number">1</span>).Dimensions        = <span class="hljs-number">1</span>;<br>  block.InputPort(<span class="hljs-number">1</span>).DirectFeedthrough = <span class="hljs-built_in">false</span>; <span class="hljs-comment">%无直接馈通</span><br>  block.OutputPort(<span class="hljs-number">1</span>).Dimensions       = <span class="hljs-number">1</span>;<br>  <span class="hljs-comment">%block.NumContStates = 1;% Set up the continuous states.</span><br>  <br>  block.SampleTimes = [<span class="hljs-number">0.1</span> <span class="hljs-number">0</span>];<span class="hljs-comment">%[-1 0]表示采用继承的采样时间 [0 0]连续采样时间</span><br>  <span class="hljs-comment">%% Set the block simStateCompliance to default (i.e., same as a built-in block)</span><br>  block.SimStateCompliance = <span class="hljs-string">&#x27;DefaultSimState&#x27;</span>;<br>  <span class="hljs-comment">%% 注册回调方法</span><br>  block.RegBlockMethod(<span class="hljs-string">&#x27;PostPropagationSetup&#x27;</span>, @DoPostPropSetup);<br>  block.RegBlockMethod(<span class="hljs-string">&#x27;InitializeConditions&#x27;</span>, @InitConditions);  <br>  block.RegBlockMethod(<span class="hljs-string">&#x27;Outputs&#x27;</span>, @Output);  <br>  block.RegBlockMethod(<span class="hljs-string">&#x27;Update&#x27;</span>,  @Update);  <br>  block.RegBlockMethod(<span class="hljs-string">&#x27;Derivatives&#x27;</span>, @Derivatives)<br><span class="hljs-comment">%endfunction</span><br><br><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">DoPostPropSetup</span><span class="hljs-params">(block)</span></span><br>  <span class="hljs-comment">%% 初始化离散状态变量，不能在setup方法中初始化离散变量</span><br>  block.NumDworks = <span class="hljs-number">1</span>;<br>  block.Dwork(<span class="hljs-number">1</span>).Name = <span class="hljs-string">&#x27;x0&#x27;</span>; <br>  block.Dwork(<span class="hljs-number">1</span>).Dimensions      = <span class="hljs-number">1</span>;<br>  block.Dwork(<span class="hljs-number">1</span>).DatatypeID      = <span class="hljs-number">0</span>;<br>  block.Dwork(<span class="hljs-number">1</span>).Complexity      = <span class="hljs-string">&#x27;Real&#x27;</span>;<br>  block.Dwork(<span class="hljs-number">1</span>).UsedAsDiscState = <span class="hljs-built_in">true</span>;<br><span class="hljs-comment">%endfunction</span><br><br><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">InitConditions</span><span class="hljs-params">(block)</span>%初始化连续或离散<span class="hljs-title">DWork</span>变量的值</span><br>  block.Dwork(<span class="hljs-number">1</span>).Data = block.DialogPrm(<span class="hljs-number">1</span>).Data;<br>  <span class="hljs-comment">% block.ContStates.Data(1) = 1.0; %ContStates方法初始化连续变量</span><br><span class="hljs-comment">%endfunction</span><br><br><span class="hljs-comment">%% 连续变量必须声明Derivatives方法来设置导数</span><br><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Derivatives</span><span class="hljs-params">(block)</span></span><br>	block.Derivatives.Data(<span class="hljs-number">1</span>) = block.InputPort(<span class="hljs-number">1</span>).Data;<br><br><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Output</span><span class="hljs-params">(block)</span></span><br>  block.OutputPort(<span class="hljs-number">1</span>).Data = block.Dwork(<span class="hljs-number">1</span>).Data;<br><span class="hljs-comment">%endfunction</span><br><br><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Update</span><span class="hljs-params">(block)</span></span><br>  block.Dwork(<span class="hljs-number">1</span>).Data = block.InputPort(<span class="hljs-number">1</span>).Data;<br><span class="hljs-comment">%endfunction</span><br></code></pre></td></tr></table></figure>
 
 <p>如下给出一个生成$\ddot{x} &#x3D; -25\dot{x}+133u(t)+d(t)$的Level-2 S-Function的示例：</p>

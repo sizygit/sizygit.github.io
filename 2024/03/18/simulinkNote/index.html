@@ -16,21 +16,28 @@
   <meta name="author" content="szy">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Simulink常用工具StateFlow​		Stateflow 图是有限状态机的图形表示，由状态、转移和数据组成。您可以创建 Stateflow 图来定义 MATLAB 算法或 Simulink模型如何响应外部输入信号、事件和基于时间的条件。Stateflow 编辑器是一个图形环境，用于设计状态转移图、流程图、状态转移表和真值表。在打开 Stateflow 编辑器之前，需要先确定最能满足您需求">
+    <meta name="description" content="Simulink常用工具StateFlow概述​		Stateflow 图是有限状态机的图形表示，由状态、转移和数据组成。您可以创建 Stateflow 图来定义 MATLAB 算法或 Simulink模型如何响应外部输入信号、事件和基于时间的条件。Stateflow 编辑器是一个图形环境，用于设计状态转移图、流程图、状态转移表和真值表。在打开 Stateflow 编辑器之前，需要先确定最能满足您">
 <meta property="og:type" content="article">
 <meta property="og:title" content="simulinkNote">
 <meta property="og:url" content="http://example.com/2024/03/18/simulinkNote/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Simulink常用工具StateFlow​		Stateflow 图是有限状态机的图形表示，由状态、转移和数据组成。您可以创建 Stateflow 图来定义 MATLAB 算法或 Simulink模型如何响应外部输入信号、事件和基于时间的条件。Stateflow 编辑器是一个图形环境，用于设计状态转移图、流程图、状态转移表和真值表。在打开 Stateflow 编辑器之前，需要先确定最能满足您需求">
+<meta property="og:description" content="Simulink常用工具StateFlow概述​		Stateflow 图是有限状态机的图形表示，由状态、转移和数据组成。您可以创建 Stateflow 图来定义 MATLAB 算法或 Simulink模型如何响应外部输入信号、事件和基于时间的条件。Stateflow 编辑器是一个图形环境，用于设计状态转移图、流程图、状态转移表和真值表。在打开 Stateflow 编辑器之前，需要先确定最能满足您">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/2024/03/18/simulinkNote/stateflow1.png">
+<meta property="og:image" content="http://example.com/2024/03/18/simulinkNote/%E5%8C%85%E5%90%AB%E5%AD%90%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%88%9D%E5%A7%8B%E5%8C%96.png">
+<meta property="og:image" content="http://example.com/2024/03/18/simulinkNote/%E5%8C%85%E5%90%AB%E5%AD%90%E7%B3%BB%E7%BB%9F.png">
+<meta property="og:image" content="http://example.com/2024/03/18/simulinkNote/%E5%B9%B6%E8%A1%8C.png">
+<meta property="og:image" content="http://example.com/2024/03/18/simulinkNote/%E8%BE%93%E5%87%BA.png">
+<meta property="og:image" content="http://example.com/2024/03/18/simulinkNote/%E5%BE%AA%E7%8E%AF%E8%B0%83%E5%BA%A6%E5%99%A8.png">
+<meta property="og:image" content="http://example.com/2024/03/18/simulinkNote/%E7%9B%91%E8%A7%86%E7%8A%B6%E6%80%81.png">
+<meta property="og:image" content="http://example.com/2024/03/18/simulinkNote/%E6%BF%80%E6%B4%BB%E7%8A%B6%E6%80%81%E6%95%B0%E6%8D%AE.png">
 <meta property="og:image" content="http://example.com/2024/03/18/simulinkNote/image-20230619190121382.png">
 <meta property="og:image" content="http://example.com/2024/03/18/simulinkNote/Mamdani%E6%A8%A1%E7%B3%8A%E9%80%BB%E8%BE%91%E7%AE%97%E6%B3%95.PNG">
 <meta property="og:image" content="http://example.com/2024/03/18/simulinkNote/T-S%E6%A8%A1%E7%B3%8A%E9%80%BB%E8%BE%91%E7%AE%97%E6%B3%95.PNG">
 <meta property="og:image" content="http://example.com/2024/03/18/simulinkNote/T-S%E5%9E%8BMF%E8%BE%93%E5%87%BA%E7%95%8C%E9%9D%A2.PNG">
 <meta property="og:image" content="http://example.com/2024/03/18/simulinkNote/MATLAB%E6%A8%A1%E7%B3%8A%E7%B3%BB%E7%BB%9F%E4%BB%BF%E7%9C%9F%E7%A4%BA%E4%BE%8B.PNG">
 <meta property="article:published_time" content="2024-03-18T05:51:52.000Z">
-<meta property="article:modified_time" content="2024-03-25T16:06:45.790Z">
+<meta property="article:modified_time" content="2024-03-28T14:57:00.314Z">
 <meta property="article:author" content="szy">
 <meta property="article:tag" content="simulink">
 <meta name="twitter:card" content="summary_large_image">
@@ -227,7 +234,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          11k 字
+          15k 字
         
       </span>
     
@@ -238,7 +245,7 @@
         
         
         
-          93 分钟
+          127 分钟
         
       </span>
     
@@ -281,16 +288,127 @@
             
               <div class="markdown-body">
                 
-                <h1 id="Simulink常用工具"><a href="#Simulink常用工具" class="headerlink" title="Simulink常用工具"></a>Simulink常用工具</h1><h2 id="StateFlow"><a href="#StateFlow" class="headerlink" title="StateFlow"></a>StateFlow</h2><p>​		Stateflow 图是有限状态机的图形表示，由状态、转移和数据组成。您可以创建 Stateflow 图来定义 MATLAB 算法或 Simulink模型如何响应外部输入信号、事件和基于时间的条件。Stateflow 编辑器是一个图形环境，用于设计状态转移图、流程图、状态转移表和真值表。在打开 Stateflow 编辑器之前，需要先确定最能满足您需求的图执行模式。</p>
+                <h1 id="Simulink常用工具"><a href="#Simulink常用工具" class="headerlink" title="Simulink常用工具"></a>Simulink常用工具</h1><h2 id="StateFlow"><a href="#StateFlow" class="headerlink" title="StateFlow"></a>StateFlow</h2><h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>​		Stateflow 图是有限状态机的图形表示，由状态、转移和数据组成。您可以创建 Stateflow 图来定义 MATLAB 算法或 Simulink模型如何响应外部输入信号、事件和基于时间的条件。Stateflow 编辑器是一个图形环境，用于设计状态转移图、流程图、状态转移表和真值表。在打开 Stateflow 编辑器之前，需要先确定最能满足您需求的图执行模式。</p>
 <ul>
 <li><p>要建立周期性或连续时间 Simulink 算法的条件、基于事件和基于时间的逻辑模型，直接在simulink中导入<code>chart</code>模块。</p>
 </li>
 <li><p>要为 MATLAB 应用程序设计可重用的状态机和时序逻辑，请使用 <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/edit.html"><code>edit</code></a> 函数创建可作为 MATLAB 对象执行的独立 Stateflow 图。在 MATLAB 命令提示符处，输入：</p>
   <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs matlab">edit sfDemo.sfx  <span class="hljs-comment">% create chart for execution as a MATLAB object</span><br></code></pre></td></tr></table></figure></li>
 </ul>
-<p>​		Stateflow编辑器主要包括图画布、对象选项板和符号图窗；图画布是表示Stateflow的绘图区域，左侧的对象选项板是可添加图形元素的工具，右侧的符号图窗则是用来添加或编辑数据、时间和消息的工具，如下图：</p>
+<p>​		Stateflow编辑器主要包括图画布、对象选项板和符号图窗；图画布是表示Stateflow的绘图区域，左侧的对象选项板是可添加图形元素的工具（空格键可自动自适应大小），右侧的符号图窗则是用来添加或编辑数据、时间和消息的工具，如下图：</p>
 <p><img src="/2024/03/18/simulinkNote/stateflow1.png" srcset="/img/loading.gif" lazyload></p>
-<p>​		最简单的state模块可用左键拖出，可定义状态名称与状态动作；同时可以在不同的状态间绘制状态转移线，在线上可添加不同的事件名称、转移条件及动作。通常运行需定义图中所有符号的作用域（如输入数据、输出数据或常量数据），通过点击左侧对应的type图表进行修改。</p>
+<p>​		最简单的<code>State</code>模块可用左键拖出，可定义状态名称与状态动作；同时可以在不同的状态间绘制状态转移线，在线上可添加不同的事件名称、转移条件及动作。<code>Juction</code>通常是作为分支逻辑和条件判断的选择点；<code>Default transition</code>模块则是默认选择子状态的转移线。通常运行需定义图中所有符号的作用域（如输入数据、输出数据或常量数据），通过点击左侧对应的type图表进行修改。</p>
+<h3 id="状态与转移"><a href="#状态与转移" class="headerlink" title="状态与转移"></a>状态与转移</h3><p>​		Stateflow的状态名称由字母数字和下划线字符组合而成，相关规范及保留关键字细节可参考<a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/stateflow/ug/rules-for-naming-stateflow-objects.html">Stateflow命名规范</a>。状态内需要定义不同的状态动作，状态动作主要包括entry(en)、during(du)、exit(ex)、on、bind几种类型，通常使用**typename :**后接相应的动作语句，如果直接在状态名称后添加语句，图会将这些语句解释为组合的 <code>entry</code> 和 <code>during</code> 动作。</p>
+<ul>
+<li><strong>entry</strong>：状态起始被激活时执行，通常用于执行初始化或准备工作。</li>
+<li><strong>during</strong>：状态被起始激活后(上一周期时间步执行过<code>entry</code>)且没有到另一个状态的有效转移时执行。</li>
+<li><strong>exit</strong>：状态被激活且发生转出状态的转移时执行。</li>
+<li><strong>on</strong>：状态被激活且接收到指定的事件或消息时执行，可参考<a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/stateflow/ug/how-events-work-in-stateflow-charts.html">通过广播事件同步模型组件</a>和<a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/stateflow/ug/message-syntax-in-charts.html">通过发送消息与 Stateflow 图通信</a>。</li>
+<li><strong>bind</strong>：用于将变量或参数绑定到不同的作用域，以实现数据共享或更改。</li>
+</ul>
+<p>​		状态的转移与计算可参考<a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/stateflow/ug/chart-initialization-and-entry-actions.html">进入图或状态</a>，<a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/stateflow/ug/evaluate-transitions.html">计算转移</a>。<strong>默认转移</strong>是一种没有源的转移。在不包含任何状态的 Stateflow 图中，默认转移标记流程图（子图）的开始，图（子图）仅在进入状态时计算状态内的默认转移路径，而不是在图每次唤醒时计算。<strong>外部转移</strong>是一种退出源状态的转移，需要使用使用状态之间的转移箭头，Stateflow 图将标记待计算的外部转移作为执行状态的<strong>第一步</strong>，没有有效的外部转移才会执行该状态的<code>during</code>。<strong>内部转移</strong>是一种不退出源状态的转移，（参阅<a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/stateflow/ug/inner-transitions.html">Control Chart Execution by Using Inner Transitions</a>），当前状态执行<code>during</code>后会标记待计算的内部转移。通常的转移标签类型为</p>
+<figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs delphi">(Event/<span class="hljs-keyword">Message</span> <span class="hljs-keyword">name</span>)[Condition]<span class="hljs-comment">&#123;ConditionAction&#125;</span> <br></code></pre></td></tr></table></figure>
+
+<p><code>Condition</code> 是布尔表达式，用于确定是否发生转移。如果不指定条件，转移将在源状态被激活后的<strong>下一个时间步</strong>发生。在转移标签语法中，若转移动作以<strong>正斜杠 (<code>/</code>) 开头</strong>，并括在花括号前 (<code>/&#123;action&#125;</code>)，仅在转移路径确定为有效后，转移动作才会执行（在转移含有条件与动作时下需要避免计算回溯）。 <code>ConditionAction</code> 是在判断转移的条件为 true 时执行的指令。条件动作发生在条件后，但在任何 <code>exit</code> 或 <code>entry</code> 状态动作之前。Stateflow中含有内置的<strong>隐式事件</strong>，可参考<a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/stateflow/ug/using-implicit-events.html">通过使用隐式事件控制图行为</a>。</p>
+<h3 id="子系统与子图"><a href="#子系统与子图" class="headerlink" title="子系统与子图"></a>子系统与子图</h3><p>​		类似子系统，也可在Stateflow中创建子图和子状态，创建子状态，请点击状态工具，将新状态拖到要作为其父状态的状态中。当父状态被激活时，子状态之一也被激活。当父状态变为非激活时，所有子状态都变为非激活。在一个时间步长内，<strong>初始化</strong>时父状态被激活时，会优先执行entry（初始化），若无<a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/stateflow/ug/recording-state-activity-with-history-junctions.html">历史节点</a>则通过<strong>默认转移</strong>到子状态执行<code>entry</code>；初始化后若图<strong>再次被唤醒</strong>，首先判断父状态的的外部转移，无有效转移执行父状态的<code>during</code>，之后在被激活的子状态中执行转移或<code>during</code>等。</p>
+<p>​		一个包含子系统的图初始化如下：</p>
+<img src="/2024/03/18/simulinkNote/包含子系统的初始化.png" srcset="/img/loading.gif" lazyload style="zoom:85%;">
+
+<p>​		一个包含子系统的执行流程如下：</p>
+<p><img src="/2024/03/18/simulinkNote/%E5%8C%85%E5%90%AB%E5%AD%90%E7%B3%BB%E7%BB%9F.png" srcset="/img/loading.gif" lazyload></p>
+<p>​		如果您需要 Stateflow 图记住并返回到以前激活的子状态，而不考虑默认转移，则应使用<strong>历史结点</strong>。将历史结点置于某状态之内会覆盖指向互斥  (OR) 子状态的默认转移。在将历史结点置于某状态内后，在执行 entry 动作时，您的 Stateflow  图会记住并进入先前激活的子状态。历史结点只会应用到层次结构中其所在的层级。</p>
+<h3 id="使用状态分解设置子系统的互斥与并行"><a href="#使用状态分解设置子系统的互斥与并行" class="headerlink" title="使用状态分解设置子系统的互斥与并行"></a>使用状态分解设置子系统的互斥与并行</h3><p>​		图或状态的分解类型指定图或状态包含互斥状态还是并行状态：<strong>互斥状态</strong>表示互斥的工作模式，同一层级上不能有两个互斥状态同时被激活或执行。Stateflow 图用实线矩形表示每个互斥状态。<strong>并行状态</strong>表示独立的工作模式，虽然并行状态会依次执行，但可以有两个或多个并行状态同时处于激活状态，Stateflow 图用虚线矩形表示每个并行状态，其中的数字表示其执行顺序。</p>
+<p>​		子状态的外观指示其父状态的分解，同时需显式指定并行顺序（参考<a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/stateflow/ug/execution-order-for-parallel-states.html">并行状态的执行顺序</a>），如下：</p>
+<p><img src="/2024/03/18/simulinkNote/%E5%B9%B6%E8%A1%8C.png" srcset="/img/loading.gif" lazyload></p>
+<h3 id="通过广播事件同步并行状态"><a href="#通过广播事件同步并行状态" class="headerlink" title="通过广播事件同步并行状态"></a>通过广播事件同步并行状态</h3><p>​		<strong>局部事件</strong>允许一个状态触发同一个 Stateflow图中另一个状态的转移或动作，从而使您能够<strong>协调并行状态</strong>。要将事件从一个状态广播到另一个状态，请使用 <code>send</code> 运算符以及事件的名称和激活状态的名称：</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs matlab">send(eventName,stateName)<br></code></pre></td></tr></table></figure>
+
+<p>当您广播事件时，该事件将在接收状态以及该状态层次结构中的任何子状态中均生效，注意广播的该事件通常只作用于本次时间步内。局部事件为固定事件类型，无需设置。</p>
+<p>​		Stateflow还可以与图外部的事件进行交互，如<a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/stateflow/ug/using-input-events-to-activate-a-stateflow-chart.html">接受输入事件</a>或<a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/stateflow/ug/using-output-events-to-activate-a-simulink-block.html">输出事件</a>。</p>
+<p>​		<strong>输出事件</strong>直接使用<code>send(eventName)</code>来广播，每个输出事件对应一个输出端口，在Modeling-Symbols Pane新建对应事件并将其设置为Output Event，右键打开事件的Inspector可配置输出事件<code>Trigger</code>属性，可设置为Either Edge（边沿触发）或Function call（函数调用）两种，均可用来传递或激活其他simulink模块，例如<a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/simulink/ug/triggered-subsystems.html">触发子系统</a>或<a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/simulink/ug/using-function-call-subsystems.html">函数调用子系统</a>。	</p>
+<ul>
+<li>Either Edge：会输出0-1的上升下降沿，触发子系统可以读取上升或者下降沿，或者Either Edge，可作为常量显示。对于每个时间步，图<strong>仅调度</strong>边沿触发输出事件的<strong>一个广播</strong>，若多次广播一个事件时，图只会广播一次该事件，在后续时间步中继续广播该事件（信号0-1的限制）。</li>
+</ul>
+<p><img src="/2024/03/18/simulinkNote/%E8%BE%93%E5%87%BA.png" srcset="/img/loading.gif" lazyload></p>
+<ul>
+<li>Function call：输出函数调用事件会激活 Simulink 模块，使其在仿真的当前时间步内执行。这种类型的输出事件只对可以使用函数调用触发的模块有效，可参阅<a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/simulink/ug/using-function-call-subsystems.html">使用函数调用子系统</a> (Simulink)。当单个时间步中存在某一函数调用输出事件的多个广播时，图会在该时间步内<strong>调度所有广播</strong>（<strong>与边沿触发不同</strong>）。函数调用子系统的执行与图的执行<strong>交叉进行</strong>，因此<strong>函数调用子系统的输出可立即在图中使用</strong>。基于此特性，可以设计一个循环调度器，从而能在一个时间步多次执行函数调用子系统，如下：</li>
+</ul>
+<p><img src="/2024/03/18/simulinkNote/%E5%BE%AA%E7%8E%AF%E8%B0%83%E5%BA%A6%E5%99%A8.png" srcset="/img/loading.gif" lazyload></p>
+<p>​		使用<strong>输入事件</strong>激活Stateflow图，只需要在Symbols中添加一个Input Event，可以将触发器属性设置为上升、下降沿或函数调用。在任意给定时间步，按其端口号升序检查输入事件。对于边沿触发输入事件，同一时间步内可能会出现多个边沿，这会在该时间步内将 Stateflow  图唤醒多次。在这种情况下，事件按其端口号的升序顺序唤醒 Stateflow 图。</p>
+<h3 id="使用状态激活数据监视图活动"><a href="#使用状态激活数据监视图活动" class="headerlink" title="使用状态激活数据监视图活动"></a>使用状态激活数据监视图活动</h3><p>​		Stateflow图中的状态在运行时可以实时显示当前状态，为了更为直观分析状态的转移历史，我们可以通过Data Inspector来记录状态值。Data Inspector可以记录局部数据、输出数据的数值，还可以用来记录状态的activity，如下：</p>
+<p><img src="/2024/03/18/simulinkNote/%E7%9B%91%E8%A7%86%E7%8A%B6%E6%80%81.png" srcset="/img/loading.gif" lazyload></p>
+<p>​		如果 Stateflow 图包含与图层次结构相关的数据，则可以使用活动状态数据( <strong>Active State Data</strong>)来简化设计，Stateflow通过输出端口将状态活动报告给Simulink或用作图表中的本地数据。激活状态数据有三种类型：</p>
+<table>
+<thead>
+<tr>
+<th>Activity Type</th>
+<th>Active State Data Type</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Self activity</td>
+<td>Boolean</td>
+</tr>
+<tr>
+<td>Child activity</td>
+<td>[Enumeration]( <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/stateflow/ug/about-active-state-data.html#bt5zn9j-1">Define State Activity Enumeration Type</a>.)</td>
+</tr>
+<tr>
+<td>Leaf state activity</td>
+<td>Enumeration</td>
+</tr>
+</tbody></table>
+<p>​		您可以为状态流图、状态、状态转换表或原子子图启用活动状态数据，下表列出了每种状态流对象支持的活动类型。</p>
+<table>
+<thead>
+<tr>
+<th>Stateflow Object</th>
+<th>Self-Activity</th>
+<th>Child Activity</th>
+<th>Leaf State Activity</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Charts</td>
+<td>Not supported</td>
+<td>Supported</td>
+<td>Supported</td>
+</tr>
+<tr>
+<td>States with exclusive (OR) decomposition</td>
+<td>Supported</td>
+<td>Supported</td>
+<td>Supported</td>
+</tr>
+<tr>
+<td>States with parallel (AND) decomposition</td>
+<td>Supported</td>
+<td>Not supported</td>
+<td>Not supported</td>
+</tr>
+<tr>
+<td>Atomic subcharts</td>
+<td>Supported at the container level</td>
+<td>Supported inside the subchart</td>
+<td>Supported inside the subchart</td>
+</tr>
+<tr>
+<td>State transition tables</td>
+<td>Not supported</td>
+<td>Supported</td>
+<td>Supported</td>
+</tr>
+</tbody></table>
+<p><img src="/2024/03/18/simulinkNote/%E6%BF%80%E6%B4%BB%E7%8A%B6%E6%80%81%E6%95%B0%E6%8D%AE.png" srcset="/img/loading.gif" lazyload></p>
+<p>​		输出的枚举类型可在Data Inspector与Scope中直接显示，也可以直接使用<code>double</code>模块强制转换为浮点数，通常会涉及到<a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/simulink/slref/memory.html">Memory</a>这个模块，用来储存上一时刻的值。Stateflow还提供了操作符<code>in</code>来检查状态是否激活（尽量使用状态的完整名称），用法如下：</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs matlab">in(state_name) <span class="hljs-comment">%若状态state_name激活返回1，反之为0</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="使用时序逻辑调度"><a href="#使用时序逻辑调度" class="headerlink" title="使用时序逻辑调度"></a>使用时序逻辑调度</h3><p>​		定义 Stateflow 图在仿真时间的行为，可在图的状态和转移动作中使用时序逻辑运算符。时间逻辑运算符是内置函数，告诉状态保持活动状态或布尔条件保持为真的时间长度。以下是最常见的绝对时间时序逻辑运算符：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/stateflow/ref/after.html">after</a> - 如果自包含该运算符的状态或包含该运算符的转移的源状态被激活以来经过的仿真时间达到 <code>n</code> 秒，则 <code>after(n,sec)</code> 返回 <code>true</code>。否则，运算符返回 <code>false</code>。此运算符支持以秒 (<code>sec</code>)、毫秒 (<code>msec</code>) 和微秒 (<code>usec</code>) 计的基于事件的时序逻辑和绝对时间时序逻辑。</li>
+<li><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/stateflow/ref/elapsed.html">elapsed</a> - <code>elapsed(sec)</code> 返回自关联状态激活以来经过的仿真时间的秒数，表达式 <code>elapsed(sec)</code> 和 <code>et</code> 等效于 <code>temporalCount(sec)</code>。</li>
+<li><a href>duration</a> - <code>duration(C)</code> 返回自布尔条件 <code>C</code> 变为 <code>true</code> 以来经过的仿真时间的秒数。</li>
+</ul>
 <h2 id="Model-Linearizer"><a href="#Model-Linearizer" class="headerlink" title="Model Linearizer"></a><strong>Model Linearizer</strong></h2><p>​		使用 Model Linearizer，您可以分析线性化模型的时域和频域响应。您可以比较多个模型的响应并查看稳定裕度和稳定时间等系统特性。</p>
 <p>参考官网链接:<a target="_blank" rel="noopener" href="https://ww2-mathworks-cn.translate.goog/help/slcontrol/ug/linearize-simulink-model.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN">在模型工作点线性化Simulink 模型</a>,   <a target="_blank" rel="noopener" href="https://ww2-mathworks-cn.translate.goog/help/slcontrol/ug/analyze-results-using-linear-analysis-tool-response-plots-1.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN">使用模型线性化器响应图分析结果使用模型线性化器响应图分析结果</a>  <a target="_blank" rel="noopener" href="https://www-mathworks-com.translate.goog/help/slcontrol/ug/specify-portion-of-model-to-linearize-in-linear-analysis-tool.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN">在模型线性化器中指定要线性化的模型部分</a></p>
 <table>

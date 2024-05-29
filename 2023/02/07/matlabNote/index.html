@@ -24,7 +24,7 @@
 <meta property="og:description" content="Matlab符号计算1.符号对象简介符号对象符号对象属于MATLAB语言中数据类型之一。符号对象是符号的字符串表示。符号对象主要用于表示： 符号常量，符号变量，符号函数，各种符号表达式 符号运算和数值运算的差别 符号运算的结果用分数，幂指数等形式表示。  表达式中有一个为符号数据，则整个表达式的计算结果是一个符号数据。  数值型表达式计算的结果为数值型数据（包括整型、浮点型）。   可以看出：当采">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-02-07T03:03:30.000Z">
-<meta property="article:modified_time" content="2024-03-18T06:33:53.976Z">
+<meta property="article:modified_time" content="2024-05-29T14:33:16.696Z">
 <meta property="article:author" content="szy">
 <meta property="article:tag" content="Matlab">
 <meta name="twitter:card" content="summary_large_image">
@@ -220,7 +220,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          7.5k 字
+          8.1k 字
         
       </span>
     
@@ -231,7 +231,7 @@
         
         
         
-          63 分钟
+          68 分钟
         
       </span>
     
@@ -408,7 +408,11 @@
 
 <figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">clear</span> <span class="hljs-literal">all</span>;clc;<br><span class="hljs-attribute">G0</span>=tf(<span class="hljs-number">120</span>,conv([<span class="hljs-number">1</span> <span class="hljs-number">0</span>],[<span class="hljs-number">1</span> <span class="hljs-number">4</span>]));<br><span class="hljs-attribute">G</span>=feedback(G0,<span class="hljs-number">1</span>);<br><span class="hljs-attribute">figure</span>(<span class="hljs-number">1</span>);bode(G0);grid <span class="hljs-literal">on</span>         %原系统的频域响应<br><span class="hljs-attribute">figure</span>(<span class="hljs-number">2</span>);step(G);grid <span class="hljs-literal">on</span>           %原系统的阶跃响应曲线<br><span class="hljs-attribute">figure</span>(<span class="hljs-number">3</span>);bode(G);grid <span class="hljs-literal">on</span>          %原闭环系统的带宽频率 <br><span class="hljs-attribute">ts</span>=<span class="hljs-number">0</span>.<span class="hljs-number">01</span>;<br><span class="hljs-attribute">Gh</span>=tf(<span class="hljs-number">1</span>,[ts/<span class="hljs-number">2</span> <span class="hljs-number">1</span>]);<br><span class="hljs-attribute">G</span>=G0*Gh;<br><span class="hljs-attribute">Dcs</span>=tf([<span class="hljs-number">0</span>.<span class="hljs-number">2</span> <span class="hljs-number">1</span>],[<span class="hljs-number">0</span>.<span class="hljs-number">02</span> <span class="hljs-number">1</span>]);<br><span class="hljs-attribute">sysc</span>=G*Dcs;<br><span class="hljs-attribute">sys</span>=feedback(sysc,<span class="hljs-number">1</span>);<br><span class="hljs-attribute">Dcz</span>=c2d(Dcs,ts,&#x27;tustin&#x27;);<br><span class="hljs-attribute">Gcz</span>=c2d(G0,ts,&#x27;zoh&#x27;);<br><span class="hljs-attribute">syscz</span>=Dcz*Gcz;<br><span class="hljs-attribute">sysz</span>=feedback(syscz,<span class="hljs-number">1</span>);<br><span class="hljs-attribute">figure</span>(<span class="hljs-number">4</span>);step(sys);hold <span class="hljs-literal">on</span>;step(sysz);grid <span class="hljs-literal">on</span><br><span class="hljs-attribute">figure</span>(<span class="hljs-number">5</span>);bode(syscz);grid <span class="hljs-literal">on</span>        %计算机控制系统的频域响应<br><br></code></pre></td></tr></table></figure>
 
-<h2 id="sim函数使用"><a href="#sim函数使用" class="headerlink" title="sim函数使用"></a>sim函数使用</h2>
+<h2 id="sim函数使用"><a href="#sim函数使用" class="headerlink" title="sim函数使用"></a>sim函数使用</h2><h2 id="plot便捷实例"><a href="#plot便捷实例" class="headerlink" title="plot便捷实例"></a>plot便捷实例</h2><p><code>DisplayName</code>参数为选择对应图例名称，最后使用legend()统一显示<br><code>HandleVisibility</code>参数为对应图例可见性，选择off即可关闭该plot图例</p>
+<p>grid minor为打开细致网格</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs matlab">subplot(<span class="hljs-number">3</span>,<span class="hljs-number">1</span>,<span class="hljs-number">3</span>)<br><span class="hljs-keyword">for</span> <span class="hljs-built_in">j</span> = <span class="hljs-number">1</span>:n_quad<br>	<br>    <span class="hljs-built_in">plot</span>(t, <span class="hljs-number">-1</span>*pos_desired(<span class="hljs-number">3</span>*<span class="hljs-built_in">j</span>).*<span class="hljs-built_in">ones</span>(step,<span class="hljs-number">1</span> ), <span class="hljs-string">&#x27;DisplayName&#x27;</span>, [sprintf(<span class="hljs-string">&quot;quad_&#123;%dd&#125;&quot;</span>,<span class="hljs-built_in">j</span>)], <span class="hljs-string">&#x27;LineWidth&#x27;</span>, <span class="hljs-number">1.2</span>);<span class="hljs-built_in">hold</span> on; <br>	grid monior; <span class="hljs-comment">%显示细致网格</span><br>    <span class="hljs-built_in">plot</span>(t, <span class="hljs-number">-1</span>*q_list(<span class="hljs-number">3</span>*<span class="hljs-built_in">j</span>,:),<span class="hljs-string">&#x27;DisplayName&#x27;</span>, [sprintf(<span class="hljs-string">&quot;quad_%d&quot;</span>,<span class="hljs-built_in">j</span>)],<span class="hljs-string">&#x27;LineWidth&#x27;</span>, <span class="hljs-number">1.2</span>);<span class="hljs-built_in">hold</span> on; grid minor;<br><span class="hljs-keyword">end</span><br><span class="hljs-built_in">legend</span>(<span class="hljs-string">&#x27;FontSize&#x27;</span>, <span class="hljs-number">10</span>);xlabel(<span class="hljs-string">&quot;t / s&quot;</span>);ylabel(<span class="hljs-string">&quot;-z / m&quot;</span>);set(get(gca,<span class="hljs-string">&#x27;XLabel&#x27;</span>), <span class="hljs-string">&#x27;FontSize&#x27;</span>, <span class="hljs-number">14</span>);set(get(gca,<span class="hljs-string">&#x27;YLabel&#x27;</span>), <span class="hljs-string">&#x27;FontSize&#x27;</span>, <span class="hljs-number">14</span>);<br></code></pre></td></tr></table></figure>
+
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
                 
               </div>
             

@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title></title>
+    <link href="/2025/04/14/win10%E4%B8%8B%E5%AE%89%E8%A3%85WSL2/"/>
+    <url>/2025/04/14/win10%E4%B8%8B%E5%AE%89%E8%A3%85WSL2/</url>
+    
+    <content type="html"><![CDATA[<h1 id="win10安装WSL2"><a href="#win10安装WSL2" class="headerlink" title="win10安装WSL2"></a>win10安装WSL2</h1><h2 id="安装WSL2"><a href="#安装WSL2" class="headerlink" title="安装WSL2"></a>安装WSL2</h2><p>​<code>wsl</code>的官方文档点这里: <a href="https://link.zhihu.com/?target=https://learn.microsoft.com/zh-cn/windows/wsl/">https://learn.microsoft.com/zh-cn/windows/wsl/</a>，首先点击<code>应用与功能</code>-&gt;<code>程序与功能</code>-&gt;<code>启用或关闭Windows功能</code>，勾选打开<code>适用于Linux的Windows子系统功能</code>。</p><p>​安装WSL2可直接参考<a href="https://learn.microsoft.com/zh-cn/windows/wsl/install#upgrade-version-from-wsl-1-to-wsl-2">微软官方文档</a>，</p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>simulinkNote</title>
     <link href="/2024/03/18/simulinkNote/"/>
     <url>/2024/03/18/simulinkNote/</url>

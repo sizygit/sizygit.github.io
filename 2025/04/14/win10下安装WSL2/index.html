@@ -24,7 +24,7 @@
 <meta property="og:description" content="win10安装WSL2WSL2相关​		wsl的官方文档点这里: https:&#x2F;&#x2F;learn.microsoft.com&#x2F;zh-cn&#x2F;windows&#x2F;wsl&#x2F;，首先点击应用与功能-&gt;程序与功能-&gt;启用或关闭Windows功能，勾选打开适用于Linux的Windows子系统功能。 ​		安装WSL2可直接参考微软官方文档，现在安装基本上均默认下载WSL2，如下是一些常见的WSL命令： 1">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-04-14T14:48:08.857Z">
-<meta property="article:modified_time" content="2026-01-23T02:12:48.005Z">
+<meta property="article:modified_time" content="2026-01-25T04:58:19.391Z">
 <meta property="article:author" content="szy">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -421,7 +421,7 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment">#创建功能包 ros2 pkg create --build-type ament_cmake(python)  &lt;package_name&gt;</span><br>ros2 pkg create follow_cpp --build-type ament_cmake --dependencies rclcpp tf2 tf2_ros geometry_msgs turtlesim<br>ros2 pkg create follow_py --build-type ament_python --dependencies rclpy tf_transformations tf2_ros geometry_msgs turtlesim<br><span class="hljs-comment"># 编译 使用symlink-install选项以便后续修改代码后无需重新编译</span><br>colcon build --packages-select your_package_name --symlink-install<br><span class="hljs-built_in">source</span> install/local_setup.bash<br></code></pre></td></tr></table></figure>
 
 <h3 id="安装PX4"><a href="#安装PX4" class="headerlink" title="安装PX4"></a>安装PX4</h3><p>安装<strong>PX4开发环境</strong>，参考官方链接<a target="_blank" rel="noopener" href="https://docs.px4.io/main/zh/ros2/user_guide.html#humble%E4%BB%A5%E5%8F%8A[%E9%98%BF%E6%9C%A8](https://blog.csdn.net/msq19895070/article/details/149111214)%EF%BC%8C%E5%85%8B%E9%9A%86%E5%A4%AA%E6%85%A2%E5%8F%AF%E4%BB%A5%E5%BC%80%E5%90%AFclash">https://docs.px4.io/main/zh/ros2/user_guide.html#humble以及[阿木](https://blog.csdn.net/msq19895070/article/details/149111214)，克隆太慢可以开启clash</a> verge的TUN模式，尽量用外国梯子，克隆结束再调回来。（注意我们选择最新稳定版本1.15.4，1.16还在开发中）</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cd</span><br>git <span class="hljs-built_in">clone</span> https://github.com/PX4/PX4-Autopilot.git --recursive<br>git describe --tags  <span class="hljs-comment"># 查看当前tag</span><br>git tag -l --<span class="hljs-built_in">sort</span>=-taggerdate <span class="hljs-comment"># 查看tag</span><br>git checkout -b v1.15.4-branch v1.15.4 <span class="hljs-comment"># 根据1.15.4的tag建立新分支</span><br>git submodule update --init --recursive<br>bash ./PX4-Autopilot/Tools/setup/ubuntu.sh<br><span class="hljs-built_in">cd</span> PX4-Autopilot/<br>make px4_sitl<br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cd</span><br>git <span class="hljs-built_in">clone</span> https://github.com/PX4/PX4-Autopilot.git<br>git describe --tags  <span class="hljs-comment"># 查看当前tag</span><br>git tag -l --<span class="hljs-built_in">sort</span>=-taggerdate <span class="hljs-comment"># 查看tag</span><br>git checkout -b v1.15.4-branch v1.15.4 <span class="hljs-comment"># 根据1.15.4的tag建立新分支</span><br>git submodule update --init --recursive<br>bash ./PX4-Autopilot/Tools/setup/ubuntu.sh<br><span class="hljs-built_in">cd</span> PX4-Autopilot/<br>make px4_sitl<br></code></pre></td></tr></table></figure>
 
 <blockquote>
 <p>注意在make编译可能出现Protobuf版本问题，参考<a target="_blank" rel="noopener" href="https://blog.gitcode.com/12276389c3d6afe286e683d6629504bd.html">网友</a>得知此问题为wsl意外一入了win10的conda内的Protobuf版本，第一种解决办法是临时修改Anaconda文件名防止索引到，第二种是在&#x2F;etc&#x2F;wsl.conf文件中禁用Windows路径继承。</p>
@@ -687,6 +687,12 @@
                 <div class="post-prevnext my-3">
                   <article class="post-prev col-6">
                     
+                    
+                      <a href="../../../../2026/01/25/ubuntu2204/" title="ubuntu2204">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">ubuntu2204</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
                     
                   </article>
                   <article class="post-next col-6">

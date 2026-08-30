@@ -24,7 +24,7 @@
 <meta property="og:description" content="ubuntu 22.04安装PX4环境双系统安装直接参考链接windows11安装ubuntu22.04双系统教程 需要的软件更新软件源、基本软件安装 更新软件源(可以手动修改&#x2F;etc&#x2F;apt&#x2F;sources.list文件，也可以在Software Updater内设置软件源，推荐前者)，并在Software Updater&#x2F;Settings&#x2F;Additional Driver">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2026-01-25T04:55:59.000Z">
-<meta property="article:modified_time" content="2026-01-25T07:18:44.096Z">
+<meta property="article:modified_time" content="2026-08-30T04:03:36.007Z">
 <meta property="article:author" content="szy">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -219,7 +219,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          4.5k 字
+          5.9k 字
         
       </span>
     
@@ -230,7 +230,7 @@
         
         
         
-          38 分钟
+          50 分钟
         
       </span>
     
@@ -278,7 +278,51 @@
 <li>更新软件源(可以手动修改<code>/etc/apt/sources.list</code>文件，也可以在Software Updater内设置软件源，推荐前者)，并在Software Updater&#x2F;Settings&#x2F;Additional Drivers选择一个NVIDIA的驱动。</li>
 <li>安装<a target="_blank" rel="noopener" href="https://shurufa.sogou.com/linux/guide">搜狗拼音</a>，<a target="_blank" rel="noopener" href="https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.3.1/Clash.Verge_2.3.1_amd64.deb">clash verge</a>, <a target="_blank" rel="noopener" href="https://code.visualstudio.com/Download">vscode</a>, chorme，typora，docky，wechat, gparted</li>
 </ul>
-<p>typora, spark-store, docky, gparted，</p>
+<p>spark-store, docky, gparted，typora的破解版可以使用旧版本(<a target="_blank" rel="noopener" href="https://github.com/Pure-Happiness/Typora-0.11.18">0.11.18</a>+<a target="_blank" rel="noopener" href="https://blog.csdn.net/HoleonZeng/article/details/126301874">修改注册表</a>)，也可以使用<a target="_blank" rel="noopener" href="https://linux.do/t/topic/1518535">激活脚本</a></p>
+<h3 id="Zsh安装"><a href="#Zsh安装" class="headerlink" title="Zsh安装"></a>Zsh安装</h3><p>安装ZSH可以参考<a target="_blank" rel="noopener" href="https://www.haoyep.com/posts/zsh-config-oh-my-zsh/%E3%80%82">https://www.haoyep.com/posts/zsh-config-oh-my-zsh/。</a></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 更新软件源，安装zsh</span><br>sudo apt update &amp;&amp; sudo apt upgrade -y<br>sudo apt install zsh<br><span class="hljs-comment"># 设置zsh为默认shell</span><br>chsh -s /bin/zsh<br></code></pre></td></tr></table></figure>
+
+<p>第一次运行 zsh 时会进入配置引导，键入0即可创建对应的配置文件<code>.zshrc</code>，然后使用<strong>oh-my-zsh</strong>来配置，安装方式任选一个即可：</p>
+<table>
+<thead>
+<tr>
+<th align="left">Method</th>
+<th align="left">Command</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>curl</strong></td>
+<td align="left"><code>sh -c &quot;$(curl -fsSL https://install.ohmyz.sh/)&quot;</code></td>
+</tr>
+<tr>
+<td align="left"><strong>wget</strong></td>
+<td align="left"><code>sh -c &quot;$(wget -O- https://install.ohmyz.sh/)&quot;</code></td>
+</tr>
+<tr>
+<td align="left"><strong>fetch</strong></td>
+<td align="left"><code>sh -c &quot;$(fetch -o - https://install.ohmyz.sh/)&quot;</code></td>
+</tr>
+<tr>
+<td align="left">国内curl<a target="_blank" rel="noopener" href="https://gitee.com/pocmon/ohmyzsh">镜像</a></td>
+<td align="left"><code>sh -c &quot;$(curl -fsSL https://gitee.com/pocmon/ohmyzsh/raw/master/tools/install.sh)&quot;</code></td>
+</tr>
+<tr>
+<td align="left">国内wget<a target="_blank" rel="noopener" href="https://gitee.com/pocmon/ohmyzsh">镜像</a></td>
+<td align="left"><code>sh -c &quot;$(wget -O- https://gitee.com/pocmon/ohmyzsh/raw/master/tools/install.sh)&quot;</code></td>
+</tr>
+</tbody></table>
+<p>可以在<a target="_blank" rel="noopener" href="https://github.com/ohmyzsh/ohmyzsh/wiki/Themes">内置主题样式截图</a>中查看所有 zsh 内置的主题样式和对应的主题名。这些内置主题已经放在 ～&#x2F;.oh-my-zsh&#x2F;themes 目录下，这里使用 <a target="_blank" rel="noopener" href="https://github.com/romkatv/powerlevel10k">powerlevel10k</a> 主题：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">git <span class="hljs-built_in">clone</span> --depth=1 https://github.com/romkatv/powerlevel10k.git <span class="hljs-variable">$&#123;ZSH_CUSTOM:-<span class="hljs-variable">$HOME</span>/.oh-my-zsh/custom&#125;</span>/themes/powerlevel10k<br><span class="hljs-comment"># 中国用户可以使用 gitee.com 上的官方镜像加速下载</span><br>git <span class="hljs-built_in">clone</span> --depth=1 https://gitee.com/romkatv/powerlevel10k.git <span class="hljs-variable">$&#123;ZSH_CUSTOM:-<span class="hljs-variable">$HOME</span>/.oh-my-zsh/custom&#125;</span>/themes/powerlevel10k<br></code></pre></td></tr></table></figure>
+
+<p>在 <code>~/.zshrc</code> 设置 <code>ZSH_THEME=&quot;powerlevel10k/powerlevel10k&quot;</code>，再次启动zsh会自动引导你配置主题（后续可以通过运行<code>p10k configure</code>来进行重新配置）。</p>
+<p><code>oh-my-zsh</code> 已经内置了 <code>git</code> 插件，插件目录在 <code>～/.oh-my-zsh/plugins</code> 中，更多插件可以在 <a target="_blank" rel="noopener" href="https://github.com/unixorn/awesome-zsh-plugins">awesome-zsh-plugins</a> 里查看，例如<a target="_blank" rel="noopener" href="https://github.com/zsh-users/zsh-autosuggestions">zsh-autosuggestions</a> 命令提示插件的安装：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git <span class="hljs-built_in">clone</span> https://github.com/zsh-users/zsh-autosuggestions <span class="hljs-variable">$&#123;ZSH_CUSTOM:-~/.oh-my-zsh/custom&#125;</span>/plugins/zsh-autosuggestions<br></code></pre></td></tr></table></figure>
+
+<p>然后修改<code>~/.zshrc</code>中插件列表参数即可：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">plugins=(git zsh-autosuggestions)<br></code></pre></td></tr></table></figure>
+
+
+
 <h2 id="主题美化"><a href="#主题美化" class="headerlink" title="主题美化"></a>主题美化</h2><p>第一步，安装gnome的桌面环境等插件，下载好后出现Tweaks与Extensions两个软件</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo apt install gnome-tweaks gnome-shell-extensions -y<br></code></pre></td></tr></table></figure>
 
